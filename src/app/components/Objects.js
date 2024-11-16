@@ -30,6 +30,26 @@ export const Objects = () => {
                     <meshStandardMaterial color={'blue'} />
                 </Sphere>
             </RigidBody>
+            <RigidBody position={[0, 10, 0]} colliders={'ball'} restitution={1}>
+                <Sphere castShadow receiveShadow args={[2, 360, 360]} rotation={[0,0,0]}>
+                    <meshStandardMaterial color={'blue'} />
+                </Sphere>
+            </RigidBody>
+            <RigidBody position={[2, 10, 1]} colliders={'ball'} restitution={1}>
+                <Sphere castShadow receiveShadow args={[2, 360, 360]} rotation={[0,0,0]}>
+                    <meshStandardMaterial color={'blue'} />
+                </Sphere>
+            </RigidBody>
+            <RigidBody position={[3, 10, 2]} colliders={'ball'} restitution={1}>
+                <Sphere castShadow receiveShadow args={[2, 360, 360]} rotation={[0,0,0]}>
+                    <meshStandardMaterial color={'blue'} />
+                </Sphere>
+            </RigidBody>
+            <RigidBody position={[5, 10, 0]} colliders={'ball'} restitution={1}>
+                <Sphere castShadow receiveShadow args={[2, 360, 360]} rotation={[0,0,0]}>
+                    <meshStandardMaterial color={'blue'} />
+                </Sphere>
+            </RigidBody>
             <RigidBody position={[10, 20, 1.5]} colliders={'cuboid'} restitution={.7}>
             <Box castShadow receiveShadow  args={[3, 3, 3]}>
                 <meshStandardMaterial color={'darkGreen'} />
